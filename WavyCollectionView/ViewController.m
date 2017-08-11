@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "CollectionViewCell.h"
+#import "ViewFlowLayout.h"
 
-@interface ViewController ()
+@interface ViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
+
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -16,7 +21,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    ViewFlowLayout *viewFlowLayout = [[ViewFlowLayout alloc] init];
+    self.collectionView.collectionViewLayout = viewFlowLayout;
+
 }
 
 
@@ -24,6 +32,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
 
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 15;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+//    cell.backgroundColor = [UIColor redColor];
+//    UILabel *label = (UILabel*)[cell viewWithTag:100];
+//    label.text = [NSString stringWithFormat:@"%ld/%ld", (long)indexPath.section, (long)indexPath.item];
+    
+    return cell;
+}
 
 @end

@@ -15,6 +15,7 @@
 		688D95D81F3CE00500C6FC6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688D95D61F3CE00500C6FC6C /* LaunchScreen.storyboard */; };
 		688D95E31F3CE00500C6FC6C /* WavyCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688D95E21F3CE00500C6FC6C /* WavyCollectionViewTests.m */; };
 		688D95EE1F3CE00500C6FC6C /* WavyCollectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 688D95ED1F3CE00500C6FC6C /* WavyCollectionViewUITests.m */; };
+		688D96001F3CFD5100C6FC6C /* ViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 688D95FF1F3CFD5100C6FC6C /* ViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		688D95E91F3CE00500C6FC6C /* WavyCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WavyCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		688D95ED1F3CE00500C6FC6C /* WavyCollectionViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WavyCollectionViewUITests.m; sourceTree = "<group>"; };
 		688D95EF1F3CE00500C6FC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		688D95FE1F3CFD5100C6FC6C /* ViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFlowLayout.h; sourceTree = "<group>"; };
+		688D95FF1F3CFD5100C6FC6C /* ViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		688D95C71F3CE00500C6FC6C /* WavyCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				688D95FE1F3CFD5100C6FC6C /* ViewFlowLayout.h */,
+				688D95FF1F3CFD5100C6FC6C /* ViewFlowLayout.m */,
 				688D95CB1F3CE00500C6FC6C /* AppDelegate.h */,
 				688D95CC1F3CE00500C6FC6C /* AppDelegate.m */,
 				688D95CE1F3CE00500C6FC6C /* ViewController.h */,
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				688D95D01F3CE00500C6FC6C /* ViewController.m in Sources */,
+				688D96001F3CFD5100C6FC6C /* ViewFlowLayout.m in Sources */,
 				688D95CD1F3CE00500C6FC6C /* AppDelegate.m in Sources */,
 				688D95CA1F3CE00500C6FC6C /* main.m in Sources */,
 			);
